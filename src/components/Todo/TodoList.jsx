@@ -13,20 +13,20 @@ const TodoList = (props) => {
         setTodoList(newArray)
     }
     const handleUpdate = (index,text)=>{
-        // const newArr = todoList;
-        // newArr[index] = text;
-        // console.log(newArr)
-        // setTodoList(newArr)
-        const newArr = todoList.map((todo,i)=>{
-            if(index==i){
-                return todo=text
-            }
-            else{
-                return todo
-            }
-        })
+        const newArr = todoList;
+        newArr[index] = text;
         console.log(newArr)
         setTodoList(newArr)
+        // const newArr = todoList.map((todo,i)=>{
+        //     if(index==i){
+        //         return todo=text
+        //     }
+        //     else{
+        //         return todo
+        //     }
+        // })
+        // console.log(newArr)
+        // setTodoList(newArr)
     }
     return (
 
