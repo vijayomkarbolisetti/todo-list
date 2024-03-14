@@ -15,7 +15,7 @@ const TodoList = (props) => {
     const handleUpdate = (index,text)=>{
         const newArr = todoList;
         newArr[index] = text;
-        console.log(newArr)
+        
         setTodoList(newArr)
         // const newArr = todoList.map((todo,i)=>{
         //     if(index==i){
